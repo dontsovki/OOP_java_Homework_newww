@@ -1,5 +1,30 @@
+import Seminar1.Book;
+import Seminar1.Cat;
+import Seminar1.Owner;
+import Seminar1.Rectangle;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        // Задание №1 Вызываем пконструктор и передаём туда параметры
+        Cat cat = new Cat("Barsik",5);
+        Owner owner = new Owner("Artem");
+        System.out.println("Мяу! Меня зовут- " + cat.getName() + ", Мне - " + cat.getAge() + ", Мой владелец - " + owner.getNameOner());
+
+        // Задание №2 Вызываем пустой конструктор с парметрами
+        Rectangle rectangle = new Rectangle();
+        rectangle.calculateArea();
+        rectangle.calculatePerimeter();
+
+        // Задание №2 Вызываем конструктор и передаём туда ширину и высоту
+        Rectangle rectangle1 = new Rectangle( 5,10);
+        System.out.printf("%s площадь прямоугольника (ширина * высота) %n", rectangle1.getWidth()*rectangle1.getHeight());
+        System.out.printf("%s периметр прямоугольника (2 * (ширина + высота) %n", 2*(rectangle1.getWidth()+rectangle1.getHeight()));
+
+        // Задание №3
+
+        Book book1 = new Book("Война и мир", "Лев Николаевич Толстой", false);
+        Book book2 = new Book("Отцы и дети автор", "Иван Тургенев", false);
+        Book book3 = new Book("Идиот", "Достоевский", false);
+        book1.displayInfo();
+
     }
 }
