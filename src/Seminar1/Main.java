@@ -1,11 +1,12 @@
-import Seminar1.Book;
-import Seminar1.Cat;
-import Seminar1.Owner;
-import Seminar1.Rectangle;
+package Seminar1;
+
+import Seminar2.impl.Cat;
+import Seminar2.impl.Owner;
+
 public class Main {
     public static void main(String[] args) {
         // Задание №1 Вызываем пконструктор и передаём туда параметры
-        Cat cat = new Cat("Barsik",5);
+        Cat cat = new Cat("Barsik","green");
         Owner owner = new Owner("Artem");
         System.out.println("Мяу! Меня зовут- " + cat.getName() + ", Мне - " + cat.getAge() + ", Мой владелец - " + owner.getNameOner());
 
@@ -25,6 +26,8 @@ public class Main {
         Book book2 = new Book("Отцы и дети автор", "Иван Тургенев", false);
         Book book3 = new Book("Идиот", "Достоевский", false);
         book1.displayInfo();
+
+
 
     }
 }

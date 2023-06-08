@@ -1,6 +1,8 @@
 package Seminar1;
 
-public class Book extends Library{
+import Seminar1.Library;
+
+public class Book extends Library {
     private String title;
     private  String author;
     private boolean available;
